@@ -96,7 +96,7 @@
 
 <header>
   <h1>Dapster</h1>
-  <p>Privacy Policy &nbsp;·&nbsp; Last Updated: April 6, 2026</p>
+  <p>Privacy Policy &nbsp;·&nbsp; Last Updated: April 23, 2026</p>
 </header>
 
 <nav>
@@ -116,7 +116,7 @@
   <p><span class="badge">A</span> <strong>Information You Provide Directly</strong></p>
   <p>When you register and set up your profile, we collect:</p>
   <ul>
-    <li>Google account information — name, email, profile photo (collected when you sign in with Google)</li>
+    <li>Google account information — name, email, profile photo (collected when you sign in with Google), <strong>or</strong> a username and bcrypt-hashed password if you register directly within the App. Your plain-text password is never stored.</li>
     <li>Full name or persona name</li>
     <li>Date of birth (used to verify you are 18 or older)</li>
     <li>Gender</li>
@@ -153,7 +153,7 @@
   <h2>2. How We Use Your Information</h2>
   <ul>
     <li>Create and manage your account</li>
-    <li>Verify your identity and age via OTP</li>
+    <li>Authenticate you via Google Sign-In or username and password</li>
     <li>Build and display your profile to other users</li>
     <li>Power the matching feed based on your preferences, gender, and location</li>
     <li>Enable 1:1 messaging and group chat functionality</li>
@@ -199,7 +199,7 @@
     <li>Your data is retained for as long as your account is active.</li>
     <li>If you delete your account, your profile data and photos will be deleted within 30 days.</li>
     <li>Chat messages may be retained for a limited additional period for safety purposes.</li>
-    <li>OTP codes are deleted immediately after verification and never stored in plain text.</li>
+    <li>If you registered with a username, your password hash is retained for as long as your account is active and permanently deleted when your account is deleted.</li>
     <li>Some data may be retained longer if required by law.</li>
   </ul>
 
