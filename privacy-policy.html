@@ -9,6 +9,7 @@
          max-width: 760px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
   h1 { color: #000; border-bottom: 2px solid #FFC629; padding-bottom: 12px; }
   h2 { margin-top: 32px; color: #222; }
+  h3 { margin-top: 20px; color: #333; }
   p, li { font-size: 15px; }
   small { color: #666; }
   a { color: #C99000; }
@@ -17,66 +18,209 @@
 <body>
 
 <h1>Dapster — Privacy Policy</h1>
-<p><small>Last updated: 28 April 2026 · Version 4.0</small></p>
+<p><small>Last updated: 17 May 2026 · Effective: 6 April 2026 · Version 5.0</small></p>
 
-<p>This Privacy Policy explains how Dapster ("<strong>we</strong>", "<strong>us</strong>") collects, uses, and shares information when you use the Dapster mobile application and related services (the "<strong>Service</strong>"). Capitalised terms not defined here have the meaning given in our Terms of Service.</p>
+<p>This Privacy Policy explains how Dapster ("<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>") collects, uses, stores, and protects your personal information when you use the Dapster mobile application (the "<strong>App</strong>"). By using Dapster, you agree to the practices described in this Policy.</p>
 
-<h2>1. About the Service</h2>
-<p>Dapster is a "<strong>reset dating app</strong>" — an anonymous, persona-based social platform whose sole purpose is to help adults find, connect, and make <strong>friends</strong>. Just friends. Dapster is not a soulmate-finder, not a romantic-matchmaking service, and not a marriage service. The Service is open to all eligible adults regardless of relationship status — single, in a relationship, married, or otherwise — provided they use it for friendship-oriented interaction only.</p>
-<p>The Service is designed to minimise the collection of identifying information. Each profile on the Service is a self-authored "Persona" that does not represent the real identity, gender, appearance, or relationship status of the User behind it.</p>
+<h2>1. Information We Collect</h2>
 
-<h2>2. Information We Collect</h2>
+<h3>A. Information You Provide Directly</h3>
+<p>When you register and set up your profile, we collect:</p>
 <ul>
-  <li><strong>Sign-in identifier.</strong> When you sign in via Google Sign-In, we receive the Google account email address and a stable user identifier issued by Google. We do not receive your Google password.</li>
-  <li><strong>Persona content.</strong> Anything you choose to add to your Persona — persona name, self-declared age (date of birth), self-expressed gender or character, photos, bio text, interests, and preferences.</li>
-  <li><strong>Approximate location.</strong> When you grant location permission, we collect your device's location to surface nearby Personas. We store only an approximate location; precise GPS coordinates are not shared with other Users — only an approximate distance is displayed.</li>
-  <li><strong>Device &amp; usage data.</strong> Device model, operating system version, app version, language, push-notification token, crash logs, and basic usage events used to operate and improve the Service.</li>
-  <li><strong>Communications.</strong> Messages and content you exchange with other Personas through the Service. Messages may be retained on our servers for the period necessary to deliver and moderate the Service.</li>
-  <li><strong>Payment metadata.</strong> If you purchase a subscription or in-app product, Google Play processes the payment and shares with us only metadata necessary to grant entitlements (e.g. order ID, product ID, purchase status). We do not receive your card or banking details.</li>
+  <li>Google account information (name, email, profile photo — collected when you sign in with Google), <strong>OR</strong></li>
+  <li>Username and hashed password (if you register with a username and password instead of Google Sign-In). We never store your password in plain text — it is stored using one-way cryptographic hashing (bcrypt).</li>
+  <li>Full name or persona name</li>
+  <li>Date of birth (used to verify you are 18 or older)</li>
+  <li>WhatsApp phone number — a 10-digit number with country code, collected during onboarding. We keep this on file for account recovery and trust &amp; safety purposes only. We do not send you WhatsApp messages, and we do not share your number with other users.</li>
+  <li>Gender</li>
+  <li>Profile photos you upload</li>
+  <li>Bio and personal description</li>
+  <li>Preferences: relationship status, looking for, body type, height, interests (turn-ons), and other onboarding fields</li>
 </ul>
 
-<h2>3. How We Use Information</h2>
+<p>When you use the App, we may also collect:</p>
 <ul>
-  <li>To create and operate your Persona and account.</li>
-  <li>To surface nearby Personas, conversations, and matches.</li>
-  <li>To deliver push notifications you have opted into.</li>
-  <li>To moderate content, prevent fraud, and enforce our Terms and Community Standards.</li>
-  <li>To provide customer support and respond to your requests.</li>
-  <li>To comply with legal obligations and respond to lawful requests from authorities.</li>
+  <li>Messages, audio recordings, and images you send in chats</li>
+  <li>Content you post in groups (channels)</li>
+  <li>Reports you submit about other users</li>
+  <li><strong>Private photos:</strong> optional set of photos that you keep separate from your main profile. You may upload up to six private photos. Other users only see a blurred teaser until you explicitly grant access through the request / approve flow inside a 1:1 chat. You can revoke an approved grant at any time; the partner then loses access immediately. Private photos and grant records are deleted within 30 days of account deletion.</li>
 </ul>
 
-<h2>4. Visibility of Your Persona Content</h2>
-<p>Persona content (persona name, photos, bio, self-expressed gender or character, approximate distance) is shown to other Users of the Service so that they can decide whether to interact with your Persona. You are responsible for the content you choose to publish on your Persona. Do not include real-world personal information you do not wish to be visible to other Users.</p>
-
-<h2>5. Sharing</h2>
-<p>We do not sell your personal data. We share information only with:</p>
+<h3>B. Information Collected Automatically</h3>
 <ul>
-  <li><strong>Other Users</strong>, in the form of your Persona content.</li>
-  <li><strong>Service providers</strong> who host and operate the Service on our behalf (e.g. cloud hosting, database, push-notification delivery, content-moderation tools), bound by confidentiality and data-protection terms.</li>
-  <li><strong>Legal authorities</strong> where disclosure is required by law, court order, or to protect the rights, safety, or property of Dapster or others.</li>
-  <li><strong>Successors</strong> in the event of a merger, acquisition, or sale of assets, subject to a binding commitment to honour this Policy.</li>
+  <li>Device information: device model, operating system version, unique device identifiers, app version</li>
+  <li>IP address</li>
+  <li>Usage data: features used, screens visited, swipe activity, session duration</li>
+  <li>Push notification tokens (Firebase Cloud Messaging)</li>
+  <li>Crash logs and error reports</li>
 </ul>
 
-<h2>6. Retention</h2>
-<p>We retain account and Persona data for as long as your account is active. When you delete your account, your Persona, photos, messages, and associated data are deleted from our active systems within a reasonable period, except where retention is required by law (for example, for tax, fraud prevention, or legal-hold purposes) or to enforce our Terms.</p>
+<h3>C. Location Information</h3>
+<p>With your permission, we collect:</p>
+<ul>
+  <li>Precise GPS location (latitude and longitude) to rank and show nearby users in your feed</li>
+  <li>City, state, and country (derived from your coordinates)</li>
+</ul>
+<p>Location is only collected while the App is in use, unless you grant background location access. You can revoke location permission at any time in your device settings.</p>
 
-<h2>7. Your Rights</h2>
-<p>Depending on your jurisdiction, you may have the right to access, correct, export, or delete the personal data we hold about you, to withdraw consent, and to object to or restrict certain processing. You can exercise most of these rights directly through the in-app settings (edit Persona, delete account). For other requests, contact us at the address below.</p>
+<h3>D. Authentication Data</h3>
+<ul>
+  <li>JWT authentication tokens stored locally on your device</li>
+  <li>If you register with a username, a bcrypt-hashed version of your password is stored on our servers. Your plain-text password is never stored or transmitted beyond the initial registration or login request.</li>
+</ul>
 
-<h2>8. Children</h2>
-<p>The Service is strictly for adults aged 18 or above. We do not knowingly collect personal data from anyone under 18. If we learn that a User is under 18, we will terminate the account and delete the associated data.</p>
+<h3>E. Payment Information</h3>
+<ul>
+  <li>We do not store your credit card or payment details.</li>
+  <li>In-app purchases (token bundles) are handled entirely by Google Play Billing. We receive only a purchase confirmation token from Google Play. Tokens have no real-world value and expire 30 days after purchase if unused.</li>
+</ul>
 
-<h2>9. Security</h2>
-<p>We use industry-standard technical and organisational measures, including encryption in transit and access controls, to protect personal data. No internet service can be guaranteed to be 100% secure; you use the Service at your own risk.</p>
+<h2>2. How We Use Your Information</h2>
+<p>We use the information we collect to:</p>
+<ul>
+  <li>Create and manage your account</li>
+  <li>Authenticate you via Google Sign-In or username and password</li>
+  <li>Recover your account and verify your identity using your WhatsApp phone number</li>
+  <li>Detect and investigate duplicate, fraudulent, or abusive accounts (trust &amp; safety)</li>
+  <li>Build and display your profile to other users</li>
+  <li>Power the matching feed (showing relevant nearby profiles based on your preferences, gender, and location)</li>
+  <li>Enable 1:1 messaging and group chat functionality</li>
+  <li>Deliver push notifications for matches, messages, and app activity</li>
+  <li>Process in-app token purchases and manage your token balance</li>
+  <li>Track online presence (last active status)</li>
+  <li>Improve and personalize your experience</li>
+  <li>Enforce our Terms and Conditions and content policies</li>
+  <li>Detect and prevent fraud, abuse, and violations</li>
+  <li>Comply with legal obligations</li>
+</ul>
 
-<h2>10. International Transfers</h2>
-<p>Your data may be processed and stored in jurisdictions outside your country of residence, including the cloud regions of our service providers. Where required by applicable law, we put appropriate safeguards in place for such transfers.</p>
+<h2>3. How We Share Your Information</h2>
+<p><strong>We do NOT sell your personal data to third parties.</strong></p>
+<p>We share information only in the following cases:</p>
+<ol type="a">
+  <li><strong>With other users</strong> — Your persona name, photos, bio, age, preferences, and approximate distance are visible to other Dapster users as part of normal app functionality. Your precise GPS coordinates are never shared with other users.</li>
+  <li>
+    <strong>With service providers</strong> — We use the following third-party services to operate the App:
+    <ul>
+      <li><strong>Supabase</strong> (supabase.com): Cloud database hosting (PostgreSQL, hosted on AWS Mumbai / ap-south-1) and real-time messaging infrastructure</li>
+      <li><strong>Cloudflare</strong> (cloudflare.com): Object storage on Cloudflare R2 — profile photos, chat images, verification selfies, and private photos — and an API edge proxy (Cloudflare Workers) that fronts all requests between the App and our backend</li>
+      <li><strong>Railway</strong> (railway.com): Hosting for our application server (NestJS), located in Railway's US-East region</li>
+      <li><strong>Google Firebase</strong> (firebase.google.com): Push notifications (FCM) and Google Sign-In authentication</li>
+      <li><strong>Google Play</strong>: In-app token purchase processing</li>
+    </ul>
+    These providers access only the data necessary to perform their services and are bound by their own privacy policies.
+  </li>
+  <li><strong>For legal compliance</strong> — We may disclose your information if required by law, court order, or governmental authority, or if we believe in good faith that disclosure is necessary to protect our rights, your safety, or the safety of others.</li>
+  <li><strong>In a business transfer</strong> — If Dapster is acquired, merged, or its assets are transferred, your information may be transferred as part of that transaction. We will notify you before your data is subject to a different privacy policy.</li>
+</ol>
 
-<h2>11. Changes to This Policy</h2>
-<p>We may update this Policy from time to time. Material changes will be communicated through the Service. Continued use after the effective date constitutes acceptance of the revised Policy.</p>
+<h2>4. Data Storage and Security</h2>
+<ul>
+  <li>Account, profile, chat, and other relational data is stored in our Supabase-hosted PostgreSQL database, which runs on AWS in the Mumbai (ap-south-1) region — India.</li>
+  <li>Profile photos, chat images, verification selfies, and private photos are stored on Cloudflare R2 (object storage). Cloudflare R2 is a global network; objects may be served from Cloudflare points of presence outside India.</li>
+  <li>Our application server (NestJS) is hosted on Railway in the United States (us-east). Because of this, certain requests and the data they carry may transit servers outside India before being persisted to the database.</li>
+  <li>All API communication between the App and our servers uses HTTPS (TLS 1.2+ encryption). Requests are routed through a Cloudflare Workers edge proxy before reaching the application server.</li>
+  <li>Passwords (for username/password accounts) are stored only as bcrypt hashes; the plain-text password is never persisted.</li>
+  <li>Authentication tokens (JWTs) are stored on your device. On Android they live in the app's sandboxed SharedPreferences area, which is accessible only to the Dapster app on a non-rooted device.</li>
+  <li>We implement reasonable technical and organizational security measures to protect your data against unauthorized access, loss, or disclosure.</li>
+  <li>No system is 100% secure. We cannot guarantee absolute security of your data transmitted over the internet.</li>
+</ul>
 
-<h2>12. Contact</h2>
-<p>For questions or to exercise your rights, contact <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a>.</p>
+<h2>5. Data Retention</h2>
+<ul>
+  <li>Your data is retained for as long as your account is active.</li>
+  <li>If you delete your account, your personal profile data, photos, and preferences will be deleted within 30 days.</li>
+  <li>Chat messages may be retained for a limited additional period for safety and abuse-prevention purposes, after which they are deleted.</li>
+  <li>Some data (e.g., abuse reports or legal hold data) may be retained longer if required by law.</li>
+  <li>Password hashes are retained for as long as your account is active and are permanently deleted when your account is deleted.</li>
+</ul>
+
+<h2>6. Location Data</h2>
+<ul>
+  <li>We collect your location to power the proximity-based matching feed.</li>
+  <li>Your precise coordinates are stored in our database and updated when you use the App.</li>
+  <li>Only an approximate distance (e.g., "3 km away") is shown to other users — your exact coordinates are never exposed.</li>
+  <li>You may disable location access in your device settings at any time, though this may reduce the quality of profile recommendations.</li>
+</ul>
+
+<h2>7. Push Notifications</h2>
+<ul>
+  <li>We send push notifications for events such as new matches, messages, and app activity via Firebase Cloud Messaging (FCM).</li>
+  <li>You may manage notification preferences within the App or through your device notification settings.</li>
+  <li>Disabling notifications will not affect core app functionality.</li>
+</ul>
+
+<h2>8. Children's Privacy</h2>
+<ul>
+  <li>Dapster is strictly for users aged 18 and above.</li>
+  <li>We do not knowingly collect personal information from anyone under 18.</li>
+  <li>If we become aware that a user is under 18, we will immediately terminate their account and delete all associated data.</li>
+  <li>If you believe a minor has created an account, please contact us at <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a> so we can take immediate action.</li>
+</ul>
+
+<h2>9. Your Rights and Choices</h2>
+<p>You have the following rights regarding your personal data:</p>
+<ul>
+  <li><strong>Access:</strong> You may request a copy of the personal data we hold about you.</li>
+  <li><strong>Correction:</strong> You may update your profile information directly in the App at any time.</li>
+  <li><strong>Deletion:</strong> You may delete your account and all associated data through the App settings, or by contacting us.</li>
+  <li><strong>Withdraw Consent:</strong> You may revoke permissions (location, notifications, camera, microphone) through your device settings at any time.</li>
+  <li><strong>Portability:</strong> You may request an export of your data in a portable format.</li>
+</ul>
+<p>To exercise any of these rights, contact us at <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a>. We will respond within 30 days.</p>
+
+<h2>10. Third-Party Links and Services</h2>
+<ul>
+  <li>The App may contain links or integrations with third-party services (e.g., Google Sign-In).</li>
+  <li>We are not responsible for the privacy practices of third-party services.</li>
+  <li>Please review the privacy policies of any third-party service you use.</li>
+</ul>
+
+<h2>11. Audio and Media Messages</h2>
+<ul>
+  <li>Audio messages recorded and sent within the App are uploaded to Cloudflare R2 and transmitted to the recipient. They are deleted from R2 when the parent message is deleted.</li>
+  <li>Images sent in chats are stored on Cloudflare R2.</li>
+  <li>View-once images are accessible only once by the recipient and are then marked as viewed and no longer served by the App.</li>
+  <li>1:1 match chats and friend chats automatically disappear 24 hours after the message is sent. A background job sweeps expired messages from the database every minute and deletes the associated media object from Cloudflare R2 at the same time.</li>
+  <li>Channel (group) messages are NOT automatically deleted after 24h — they live until the channel owner or admin removes them, or until the channel itself is deleted.</li>
+</ul>
+
+<h2>11A. Private Photos</h2>
+<ul>
+  <li>You may upload up to six "private photos" that are kept separate from your main profile photos.</li>
+  <li>Private photos are stored in a private Cloudflare R2 bucket. The raw files are never served on a public URL — every byte fetch is authenticated and authorized on our backend before R2 is read.</li>
+  <li>Other users see only a blurred placeholder ("blurhash") until you explicitly grant access through the in-chat request / approve flow.</li>
+  <li>You may revoke an approved grant at any time from the chat screen; the partner loses access immediately and we send them a push notification informing them that access was revoked.</li>
+  <li>When you delete your account, every private photo file you uploaded is deleted from R2 and every grant record is removed within 30 days.</li>
+</ul>
+
+<h2>12. Verification Data</h2>
+<ul>
+  <li>If you choose to submit identity verification (selfie), that image is reviewed by our moderation team solely for verification purposes.</li>
+  <li>Verification images are not shared with other users or third parties.</li>
+  <li>Verification images are deleted after the review is complete.</li>
+</ul>
+
+<h2>13. Changes to This Privacy Policy</h2>
+<ul>
+  <li>We may update this Privacy Policy periodically to reflect changes in our practices or for legal, operational, or regulatory reasons.</li>
+  <li>We will notify you of significant changes through the App or via the contact information associated with your account.</li>
+  <li>Continued use of the App after the effective date of changes constitutes your acceptance of the updated Policy.</li>
+  <li>The "Last Updated" date at the top of this document indicates when the most recent changes were made.</li>
+</ul>
+
+<h2>14. Governing Law</h2>
+<p>This Privacy Policy is governed by the laws of India. Any disputes relating to this Policy shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+
+<h2>15. Contact Us</h2>
+<p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a></li>
+  <li><strong>App:</strong> Dapster (com.dapster.app)</li>
+</ul>
+<p>We are committed to resolving any concerns promptly and transparently.</p>
+
+<p><small>© 2026 Dapster. All rights reserved.</small></p>
 
 </body>
 </html>
