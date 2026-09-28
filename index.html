@@ -1,88 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Legal — Dapster</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #fff;
-      color: #1a1a1a;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      background: #FFC629;
-      padding: 48px 24px 40px;
-      text-align: center;
-    }
-    header h1 { font-size: 36px; font-weight: 800; color: #1a1a1a; }
-    header p { margin-top: 8px; font-size: 15px; color: #555; }
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      padding: 60px 24px;
-      flex-wrap: wrap;
-      flex: 1;
-    }
-    .card {
-      background: #fff;
-      border: 2px solid #e5e5e5;
-      border-radius: 16px;
-      padding: 36px 32px;
-      width: 300px;
-      text-align: center;
-      text-decoration: none;
-      color: #1a1a1a;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .card:hover {
-      border-color: #FFC629;
-      box-shadow: 0 4px 20px rgba(255,198,41,0.25);
-    }
-    .card .icon { font-size: 48px; margin-bottom: 16px; }
-    .card h2 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
-    .card p { font-size: 14px; color: #666; line-height: 1.6; }
-    footer {
-      background: #1a1a1a;
-      color: #888;
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Legal — Dapster: Play Any Persona</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#5f5f5f; --brand:#FFC629; --link:#8a6300; --line:#e4e4e4; --soft:#FFF8E1; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0;
+         color: var(--ink); background: #fff; line-height: 1.6; overflow-wrap: break-word; }
+  header { background: var(--brand); padding: 40px 16px 32px; text-align: center; }
+  header h1 { font-size: 30px; margin: 0; line-height: 1.2; }
+  header p { margin: 8px 0 0; font-size: 16px; }
+  main { max-width: 780px; margin: 0 auto; padding: 24px 16px 48px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 20px 0; }
+  .card { display: block; border: 2px solid var(--line); border-radius: 14px; padding: 20px; text-decoration: none; color: var(--ink); }
+  .card:hover, .card:focus { border-color: var(--brand); }
+  .card h2 { font-size: 19px; margin: 0 0 6px; }
+  .card p { font-size: 14.5px; color: var(--muted); margin: 0; }
+  .box { background: var(--soft); border-left: 4px solid var(--brand); padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  a { color: var(--link); }
+  mark { background: #FFE58A; color: #000; padding: 0 3px; border-radius: 3px; font-weight: 600; }
+  .contact { background: #fafafa; border: 1px solid var(--line); border-radius: 8px; padding: 4px 16px 12px; margin-top: 32px; }
+  .contact h2 { font-size: 19px; }
+  footer { color: var(--muted); font-size: 13px; text-align: center; padding: 16px; border-top: 1px solid var(--line); }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Dapster</h1>
-    <p>Legal Documents</p>
-  </header>
+<header>
+  <h1>Dapster: Play Any Persona</h1>
+  <p>Real people. Imagined personas.</p>
+</header>
+<main>
+  <p>Dapster is a persona app for adults (18+). Members create and play personas; everyone knows profiles are personas, not real identities. Every account belongs to a real adult who passed an automatic selfie check. Dapster is not a dating, matchmaking or paid-companionship service, and is not affiliated with other products that use a similar name.</p>
+  <p class="meta">All documents: Effective: 29 September 2026 · Version 7.0</p>
+
+  <div class="box">
+    <strong>What changed in 7.0</strong>: new persona-app identity, full deletion of your data within 30 days, clear statements about message scanning and staff access, separate consents for selfie check and location, and a Grievance Officer. Each page lists its own changes.
+  </div>
+
   <div class="cards">
-    <a class="card" href="privacy-policy.html">
-      <div class="icon">&#128274;</div>
-      <h2>Privacy Policy</h2>
-      <p>How we collect, use, store, and protect your personal information.</p>
-    </a>
     <a class="card" href="terms.html">
-      <div class="icon">&#128221;</div>
-      <h2>Terms &amp; Conditions</h2>
-      <p>Rules and guidelines for using the Dapster app.</p>
+      <h2>Terms of Service</h2>
+      <p>The rules for using Dapster, persona rules, paid plans and refunds, moderation and appeals.</p>
     </a>
-    <a class="card" href="child-safety.html">
-      <div class="icon">&#128118;</div>
-      <h2>Child Safety Standards</h2>
-      <p>Our standards and policies against child sexual abuse and exploitation (CSAE).</p>
+    <a class="card" href="privacy-policy.html">
+      <h2>Privacy Policy</h2>
+      <p>What data we collect, why, who sees it, how long we keep it, and your rights.</p>
     </a>
     <a class="card" href="delete-account.html">
-      <div class="icon">&#128465;</div>
-      <h2>Delete Your Account</h2>
-      <p>How to delete your Dapster account, and exactly what is deleted and what is kept.</p>
+      <h2>Delete your account</h2>
+      <p>How to delete your account, what is deleted and what is kept.</p>
+    </a>
+    <a class="card" href="child-safety.html">
+      <h2>Child Safety Standards</h2>
+      <p>Zero tolerance for child sexual abuse and exploitation, and how to report it.</p>
     </a>
   </div>
-  <footer>&copy; 2026 Dapster. All rights reserved.</footer>
+
+  <section class="contact" id="contact">
+    <h2>Contact and grievances</h2>
+    <ul>
+      <li><strong>Support:</strong> <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a></li>
+      <li><strong>Grievance Officer:</strong> <mark>[GRIEVANCE OFFICER NAME]</mark>, <mark>[GRIEVANCE OFFICER EMAIL]</mark></li>
+      <li><strong>Operator:</strong> <mark>[OPERATOR LEGAL NAME]</mark> (<mark>[OPERATOR TYPE: individual / registered business]</mark>), <mark>[OPERATOR POSTAL ADDRESS, KERALA, INDIA]</mark></li>
+    </ul>
+    <p>We acknowledge complaints within 24 hours and resolve them within 15 days. Details: <a href="terms.html#grievance">Terms</a> and <a href="privacy-policy.html#grievance">Privacy Policy</a>.</p>
+  </section>
+</main>
+<footer>Dapster: Play Any Persona · Version 7.0 · Effective 29 September 2026</footer>
 </body>
 </html>

@@ -3,240 +3,297 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dapster — Privacy Policy</title>
+<meta name="color-scheme" content="light">
+<title>Privacy Policy — Dapster: Play Any Persona</title>
 <style>
+  :root { --ink:#1a1a1a; --muted:#5f5f5f; --brand:#FFC629; --link:#8a6300; --line:#e4e4e4; --soft:#FFF8E1; --warn:#FFF1F0; --warnline:#D93025; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         max-width: 760px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
-  h1 { color: #000; border-bottom: 2px solid #FFC629; padding-bottom: 12px; }
-  h2 { margin-top: 32px; color: #222; }
-  h3 { margin-top: 20px; color: #333; }
-  p, li { font-size: 15px; }
-  small { color: #666; }
-  a { color: #C99000; }
+         max-width: 780px; margin: 0 auto; padding: 20px 16px 48px; color: var(--ink); background: #fff;
+         line-height: 1.6; overflow-wrap: break-word; }
+  .brand { font-weight: 800; font-size: 17px; }
+  .brand span { display: block; font-weight: 400; font-size: 14px; color: var(--muted); }
+  nav.links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 28px; border-bottom: 3px solid var(--brand); padding-bottom: 10px; margin: 22px 0 6px; line-height: 1.25; }
+  h2 { font-size: 21px; margin-top: 36px; scroll-margin-top: 12px; line-height: 1.3; }
+  h3 { font-size: 17px; margin-top: 22px; }
+  p, li { font-size: 15.5px; }
+  li { margin-bottom: 4px; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 0; }
+  a { color: var(--link); }
+  mark { background: #FFE58A; color: #000; padding: 0 3px; border-radius: 3px; font-weight: 600; }
+  .box { background: var(--soft); border-left: 4px solid var(--brand); padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .warn { background: var(--warn); border-left-color: var(--warnline); }
+  .toc { font-size: 14.5px; columns: 2 220px; padding-left: 20px; }
+  .table-wrap { overflow-x: auto; margin: 16px 0; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; min-width: 640px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; font-size: 14px; }
+  th { background: #fafafa; }
+  .contact { background: #fafafa; border: 1px solid var(--line); border-radius: 8px; padding: 4px 16px 12px; margin-top: 40px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 12px; }
+  @media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 19px; } }
 </style>
 </head>
 <body>
 
-<h1>Dapster — Privacy Policy</h1>
-<p><small>Last updated: 28 September 2026 · Effective: 6 April 2026 · Version 6.1</small></p>
+<div class="brand">Dapster: Play Any Persona<span>Real people. Imagined personas.</span></div>
+<nav class="links" aria-label="Legal pages">
+  <a href="index.html">All legal pages</a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="delete-account.html">Delete your account</a>
+  <a href="child-safety.html">Child Safety Standards</a>
+</nav>
 
-<p>This Privacy Policy explains how Dapster ("<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>") collects, uses, stores, and protects your personal information when you use the Dapster mobile application (the "<strong>App</strong>"). By using Dapster, you agree to the practices described in this Policy.</p>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective: 29 September 2026 · Version 7.0</p>
 
-<h2>1. Information We Collect</h2>
+<div class="box">
+  <strong>What changed in 7.0</strong>
+  <ul>
+    <li>Deleting your account now erases your profile, photos, selfie and messages within 30 days. Only purchase records and a one-way hashed copy of your login identifiers are kept.</li>
+    <li>Selfie-check images and voice clips are now deleted 30 days after you submit them.</li>
+    <li>We now state clearly that messages are automatically scanned for safety risks and that authorised staff may access conversations.</li>
+    <li>Separate consents for the selfie check and for location, and location consent can be withdrawn in Settings.</li>
+    <li>Full list of service providers and where data is processed, your rights under the Digital Personal Data Protection Act, 2023, and a Grievance Officer.</li>
+    <li>Removed wrong statements from earlier versions (for example crash logs, background location and profiles run by Dapster).</li>
+  </ul>
+</div>
 
-<h3>A. Information You Provide Directly</h3>
-<p>When you register and set up your profile, we collect:</p>
-<ul>
-  <li>Google account information (name, email, profile photo — collected when you sign in with Google), <strong>OR</strong></li>
-  <li>Username and hashed password (if you register with a username and password instead of Google Sign-In). We never store your password in plain text — it is stored using one-way cryptographic hashing (bcrypt).</li>
-  <li>Full name or persona name</li>
-  <li>Date of birth (used to verify you are 18 or older)</li>
-  <li>WhatsApp phone number — a 10-digit number with country code, collected during onboarding. We keep this on file for account recovery and trust &amp; safety purposes only. We do not send you WhatsApp messages, and we do not share your number with other users.</li>
-  <li>Gender</li>
-  <li>Profile photos you upload</li>
-  <li>Bio and personal description</li>
-  <li>Preferences: relationship status, looking for, body type, height, interests (turn-ons), and other onboarding fields</li>
-</ul>
+<p>This policy explains what personal data Dapster collects, why, who can see it, how long we keep it, and your rights. The data fiduciary (the party responsible for your data) is <mark>[OPERATOR LEGAL NAME]</mark>, <mark>[OPERATOR TYPE: individual / registered business]</mark>, <mark>[OPERATOR POSTAL ADDRESS, KERALA, INDIA]</mark> ("<strong>we</strong>", "<strong>us</strong>"). Contact details are in <a href="#grievance">Section 17</a>.</p>
+<p>We do <strong>not</strong> sell your personal data. We do <strong>not</strong> use AI or large language models to process your messages. We do <strong>not</strong> use a crash-reporting tool.</p>
 
-<p>When you use the App, we may also collect:</p>
-<ul>
-  <li>Messages, audio recordings, and images you send in chats</li>
-  <li>Content you post in groups (channels)</li>
-  <li>Reports you submit about other users</li>
-  <li><strong>Private photos:</strong> optional set of photos that you keep separate from your main profile. You may upload up to six private photos. Other users only see a blurred teaser until you explicitly grant access through the request / approve flow inside a 1:1 chat. You can revoke an approved grant at any time; the partner then loses access immediately. Private photos and grant records are deleted within 30 days of account deletion.</li>
-</ul>
-
-<h3>B. Information Collected Automatically</h3>
-<ul>
-  <li>Device information: device model, operating system version, unique device identifiers, app version</li>
-  <li>IP address</li>
-  <li>Usage data: features used, screens visited, swipe activity, session duration</li>
-  <li>Push notification tokens (Firebase Cloud Messaging)</li>
-  <li>Crash logs and error reports</li>
-  <li>Install source: how you found the App (for example, the Google Play store or a Dapster ad on Facebook or Instagram), read from the Google Play Install Referrer and the Meta Install Referrer when you first open the App</li>
-  <li>Android Advertising ID, used only to measure and improve our own ads (see Section 3). You can reset or delete it at any time in your device settings (Settings &rarr; Google &rarr; Ads)</li>
-</ul>
-
-<h3>C. Location Information</h3>
-<p>With your permission, we collect:</p>
-<ul>
-  <li>Approximate (coarse) device location, used to work out your area and to rank and show nearby members in your feed. We do not request or use precise GPS.</li>
-  <li>City, state, and country (derived from your coordinates)</li>
-</ul>
-<p>Location is only collected while the App is in use, unless you grant background location access. You can revoke location permission at any time in your device settings.</p>
-
-<h3>D. Authentication Data</h3>
-<ul>
-  <li>JWT authentication tokens stored locally on your device</li>
-  <li>If you register with a username, a bcrypt-hashed version of your password is stored on our servers. Your plain-text password is never stored or transmitted beyond the initial registration or login request.</li>
-</ul>
-
-<h3>E. Payment Information</h3>
-<ul>
-  <li>We do not store your credit card or payment details.</li>
-  <li>In-app purchases (premium plans and channel passes) are handled entirely by Google Play Billing. We receive only a purchase confirmation from Google Play. Premium plans are one-time purchases granting 30 days of access; they are not subscriptions and do not auto-renew.</li>
-</ul>
-
-<h2>2. How We Use Your Information</h2>
-<p>We use the information we collect to:</p>
-<ul>
-  <li>Create and manage your account</li>
-  <li>Authenticate you via Google Sign-In or username and password</li>
-  <li>Recover your account and verify your identity using your WhatsApp phone number</li>
-  <li>Detect and investigate duplicate, fraudulent, or abusive accounts (trust &amp; safety)</li>
-  <li>Build and display your profile to other users</li>
-  <li>Power the matching feed (showing relevant nearby profiles based on your preferences, gender, and location)</li>
-  <li>Enable 1:1 messaging and group chat functionality</li>
-  <li>Deliver push notifications for matches, messages, and app activity</li>
-  <li>Process in-app purchases and manage your premium access period</li>
-  <li>Track online presence (last active status)</li>
-  <li>Improve and personalize your experience</li>
-  <li>Measure how well our own ads work (for example, how many people installed, signed up or subscribed after seeing a Dapster ad)</li>
-  <li>Enforce our Terms and Conditions and content policies</li>
-  <li>Detect and prevent fraud, abuse, and violations</li>
-  <li>Comply with legal obligations</li>
-</ul>
-
-<h2>3. How We Share Your Information</h2>
-<p><strong>We do NOT sell your personal data to third parties.</strong></p>
-<p>We share information only in the following cases:</p>
-<ol type="a">
-  <li><strong>With other users</strong> — Your persona name, photos, bio, age, preferences, and approximate distance are visible to other Dapster users as part of normal app functionality. Your location is never shared with other members as coordinates - only a general area and an approximate distance.</li>
-  <li>
-    <strong>With service providers</strong> — We use the following third-party services to operate the App:
-    <ul>
-      <li><strong>Supabase</strong> (supabase.com): Cloud database hosting (PostgreSQL, hosted on AWS Mumbai / ap-south-1) and real-time messaging infrastructure</li>
-      <li><strong>Cloudflare</strong> (cloudflare.com): Object storage on Cloudflare R2 — profile photos, chat images, verification selfies, and private photos — and an API edge proxy (Cloudflare Workers) that fronts all requests between the App and our backend</li>
-      <li><strong>Railway</strong> (railway.com): Hosting for our application server (NestJS), located in Railway's US-East region</li>
-      <li><strong>Google Firebase</strong> (firebase.google.com): Push notifications (FCM) and Google Sign-In authentication</li>
-      <li><strong>Google Play</strong>: In-app purchase processing</li>
-      <li><strong>Meta Platforms</strong> (facebook.com): The Meta App Events SDK tells Meta when the App is installed or opened, when an account is created, and when a purchase is made (with its price), together with your device's Advertising ID. Meta uses this to measure and improve Dapster's own ads on Facebook and Instagram. We do not share your name, photos, chats, profile details or location with Meta. Meta's use of this data is covered by its Data Policy (facebook.com/privacy/policy)</li>
-    </ul>
-    These providers access only the data necessary to perform their services and are bound by their own privacy policies.
-  </li>
-  <li><strong>For legal compliance</strong> — We may disclose your information if required by law, court order, or governmental authority, or if we believe in good faith that disclosure is necessary to protect our rights, your safety, or the safety of others.</li>
-  <li><strong>In a business transfer</strong> — If Dapster is acquired, merged, or its assets are transferred, your information may be transferred as part of that transaction. We will notify you before your data is subject to a different privacy policy.</li>
+<h2>Contents</h2>
+<ol class="toc">
+  <li><a href="#account-vs-persona">Real account data vs persona data</a></li>
+  <li><a href="#table">What we collect and why</a></li>
+  <li><a href="#consent">Consent and how to withdraw it</a></li>
+  <li><a href="#selfie">The selfie check</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#visible">What other members can see</a></li>
+  <li><a href="#chats">Chats, photos and view-once</a></li>
+  <li><a href="#moderation">Moderation, scanning and reports</a></li>
+  <li><a href="#payments">Payments</a></li>
+  <li><a href="#ads">Ad measurement (Meta) and device data</a></li>
+  <li><a href="#processors">Service providers and where data goes</a></li>
+  <li><a href="#security">Security</a></li>
+  <li><a href="#retention">How long we keep data</a></li>
+  <li><a href="#rights">Your rights</a></li>
+  <li><a href="#breach">Data breaches</a></li>
+  <li><a href="#minors">18+ only</a></li>
+  <li><a href="#grievance">Grievance Officer and contact</a></li>
+  <li><a href="#changes">Changes to this policy</a></li>
 </ol>
 
-<h2>4. Data Storage and Security</h2>
+<h2 id="account-vs-persona">1. Real account data vs persona data</h2>
+<p>Dapster is a persona app. Your data falls into two groups:</p>
 <ul>
-  <li>Account, profile, chat, and other relational data is stored in our Supabase-hosted PostgreSQL database, which runs on AWS in the Mumbai (ap-south-1) region — India.</li>
-  <li>Profile photos, chat images, verification selfies, and private photos are stored on Cloudflare R2 (object storage). Cloudflare R2 is a global network; objects may be served from Cloudflare points of presence outside India.</li>
-  <li>Our application server (NestJS) is hosted on Railway in the United States (us-east). Because of this, certain requests and the data they carry may transit servers outside India before being persisted to the database.</li>
-  <li>All API communication between the App and our servers uses HTTPS (TLS 1.2+ encryption). Requests are routed through a Cloudflare Workers edge proxy before reaching the application server.</li>
-  <li>Passwords (for username/password accounts) are stored only as bcrypt hashes; the plain-text password is never persisted.</li>
-  <li>Authentication tokens (JWTs) are stored on your device. On Android they live in the app's sandboxed SharedPreferences area, which is accessible only to the Dapster app on a non-rooted device.</li>
-  <li>We implement reasonable technical and organizational security measures to protect your data against unauthorized access, loss, or disclosure.</li>
-  <li>No system is 100% secure. We cannot guarantee absolute security of your data transmitted over the internet.</li>
+  <li><strong>Real account data</strong> is about you: your email, Google ID or username, password hash, date of birth, gender, phone number (if asked), selfie-check image, approximate location, consent records and purchases. It must be true, and we treat it as personal data.</li>
+  <li><strong>Persona data</strong> is the character you create: the name shown, age shown, bio, story and optional details. It is fiction by design. We still protect it as personal data because it is linked to your account, and your photos may show you.</li>
 </ul>
 
-<h2>5. Data Retention</h2>
+<h2 id="table">2. What we collect and why</h2>
+<p>"Legal basis" refers to the Digital Personal Data Protection Act, 2023 (DPDP Act): <strong>Consent</strong> (section 6), or a <strong>legitimate use</strong> under section 7 (for example, data you gave us voluntarily for a specific purpose, or processing needed to comply with a law or court order).</p>
+<div class="table-wrap">
+<table>
+  <tr><th>Data</th><th>Why we use it</th><th>Legal basis</th><th>Who can see it</th><th>How long we keep it</th></tr>
+  <tr><td>Google sign-in: email, name, Google ID, profile picture</td><td>Create your account and sign you in</td><td>Consent</td><td>Dapster only. Your email is never shown to members.</td><td>While your account is active + up to 30 days after deletion; a hashed copy is kept (see <a href="#retention">Section 13</a>)</td></tr>
+  <tr><td>Username and password</td><td>Sign you in. The password is stored only as a bcrypt hash, never in plain text.</td><td>Consent</td><td>Dapster only</td><td>As above</td></tr>
+  <tr><td>Login tokens (access token 7 days, refresh token 90 days)</td><td>Keep you signed in. Refresh tokens are stored hashed on our server.</td><td>Consent</td><td>Nobody</td><td>Until they expire or you sign out / delete your account</td></tr>
+  <tr><td>Gender</td><td>Show you the right feed; cannot be changed later</td><td>Consent</td><td>Members (shown on your profile)</td><td>Account life + up to 30 days</td></tr>
+  <tr><td>Date of birth</td><td>Confirm you are 18+ (self-declared; our server rejects under-18s)</td><td>Consent; legal obligation to keep minors off</td><td>Dapster only. Never shown to members.</td><td>Account life + up to 30 days</td></tr>
+  <tr><td>WhatsApp phone number (asked from some male accounts that sign in with Google)</td><td>Account security and support. It is <strong>not</strong> verified by OTP and we do not send WhatsApp messages.</td><td>Consent</td><td>Dapster only. Never shown to members.</td><td>Account life + up to 30 days; a hashed copy is kept</td></tr>
+  <tr><td>Persona profile: name shown, bio, age shown, up to 9 public photos, optional height, weight, body type, relationship status, languages</td><td>Show your persona to other members</td><td>Consent</td><td>Members</td><td>Until you remove it, or account life + up to 30 days</td></tr>
+  <tr><td>Private photos (up to 6)</td><td>Share with matches you approve</td><td>Consent</td><td>Only members you approve (revocable)</td><td>Until you remove them, or account life + up to 30 days</td></tr>
+  <tr><td>Approximate location (rounded to about 1 km) and the city/area worked out from it</td><td>Show your city/area and order the feed</td><td>Consent (separate checkbox)</td><td>Members see city/area only</td><td>Until you withdraw consent, or account life + up to 30 days</td></tr>
+  <tr><td>Selfie-check image and optional voice clip</td><td>Automatic selfie check to keep Dapster to real adults; safety review</td><td>Consent (separate checkbox)</td><td>Authorised staff only</td><td>30 days after you submit it</td></tr>
+  <tr><td>Consent records (what you accepted, which version, when)</td><td>Prove what you agreed to</td><td>Legal obligation</td><td>Dapster only</td><td>Account life + up to 30 days</td></tr>
+  <tr><td>Messages, voice notes, chat photos and audio, shared locations, games</td><td>Deliver chats</td><td>Consent</td><td>The people in the chat; authorised staff (see <a href="#moderation">Section 8</a>)</td><td>24 hours (last 5 messages up to 7 days as text), or until deletion if disappearing is off</td></tr>
+  <tr><td>Channel posts and post messages</td><td>Run channels</td><td>Consent</td><td>Channel viewers (posts show an anonymous name); staff can see the author</td><td>Until removed, or account life + up to 30 days</td></tr>
+  <tr><td>Likes, matches, requests, friend requests, blocks, mutes</td><td>Run the features</td><td>Consent</td><td>The members involved (blocks and mutes are not shown)</td><td>Account life; chats, matches and likes deleted immediately on account deletion</td></tr>
+  <tr><td>Reports you make or receive</td><td>Handle safety issues</td><td>Consent; legal obligation</td><td>Authorised staff</td><td>While relevant for safety; removed with the account</td></tr>
+  <tr><td>Flagged-message records</td><td>Safety review of text flagged by automatic scanning</td><td>Consent; legal obligation</td><td>Authorised staff</td><td>While your account is active; deleted in the account purge</td></tr>
+  <tr><td>Purchase records (product, price, date, Google Play order details, refunds)</td><td>Give you what you paid for; handle refunds; tax and accounting</td><td>Consent; legal obligation</td><td>Dapster only</td><td>As long as tax and accounting laws require</td></tr>
+  <tr><td>Online status and last active time; usage records (for example which features and upgrade screens you used)</td><td>Show "online" (only if active in the last 10 minutes and availability is on); improve the app</td><td>Consent</td><td>Members see the online mark only</td><td>Account life + up to 30 days</td></tr>
+  <tr><td>Push token and app/device information</td><td>Send notifications; make the app work on your device</td><td>Consent</td><td>Dapster and Google Firebase</td><td>Account life + up to 30 days</td></tr>
+  <tr><td>Android Advertising ID, install and app-open events, registration and purchase events, ad install-referrer data</td><td>Measure Dapster's own ads (Meta)</td><td>Consent</td><td>Dapster and Meta</td><td>See <a href="#ads">Section 10</a></td></tr>
+  <tr><td>Server logs (for example IP address, time, request made)</td><td>Run, secure and fix the service</td><td>Legitimate use; legal obligation</td><td>Dapster and our hosting providers</td><td>According to each provider's log retention</td></tr>
+</table>
+</div>
+
+<h2 id="consent">3. Consent and how to withdraw it</h2>
 <ul>
-  <li>Your data is retained for as long as your account is active.</li>
-  <li>If you delete your account, your personal profile data, photos, and preferences will be deleted within 30 days.</li>
-  <li>Chat messages may be retained for a limited additional period for safety and abuse-prevention purposes, after which they are deleted.</li>
-  <li>Some data (e.g., abuse reports or legal hold data) may be retained longer if required by law.</li>
-  <li>Password hashes are retained for as long as your account is active and are permanently deleted when your account is deleted.</li>
+  <li>When you sign up you must accept the Community Standards, Terms of Service and this Privacy Policy (version 7.0). Our server records the time and the version. When versions change, everyone is asked again.</li>
+  <li>There are <strong>separate consent checkboxes</strong> for the selfie check and for location.</li>
+  <li><strong>Location:</strong> you can withdraw consent at any time in <strong>Settings &gt; Privacy &amp; consent</strong>. This clears your stored location. You can also turn off location permission in Android settings.</li>
+  <li><strong>Selfie check:</strong> this is required to use Dapster. Withdrawing this consent therefore means deleting your account (see <a href="delete-account.html">Delete your account</a>).</li>
+  <li>Withdrawing consent does not make processing done before the withdrawal unlawful.</li>
 </ul>
 
-<h2>6. Location Data</h2>
+<h2 id="selfie">4. The selfie check</h2>
 <ul>
-  <li>We collect your location to power the proximity-based matching feed.</li>
-  <li>Your approximate coordinates are stored in our database, rounded before storage, and updated when you use the App. If you share a location inside a chat, the coordinates in that message are stored as part of the message.</li>
-  <li>Only an approximate distance (e.g., "3 km away") is shown to other users — your exact coordinates are never exposed.</li>
-  <li>You may disable location access in your device settings at any time, though this may reduce the quality of profile recommendations.</li>
+  <li>During sign-up you take a selfie (and can add an optional voice clip).</li>
+  <li><strong>On your phone</strong>, Google ML Kit checks that the photo shows exactly one face. This check happens on the device; the selfie is not sent to Google for it.</li>
+  <li>The selfie is then uploaded and <strong>our server approves it automatically</strong>. There is no face matching against your photos, no liveness test and no ID check. It does not confirm your identity or your age.</li>
+  <li>The selfie and voice clip are stored privately, are <strong>never shown to other members</strong>, and are <strong>deleted 30 days after you submit them</strong>. During those 30 days, authorised staff can view them for safety review.</li>
+  <li>We treat selfie images as sensitive data and handle them with the care required for sensitive personal data under the IT Act, 2000 and the SPDI Rules, 2011, even though we do not use them for biometric identification.</li>
 </ul>
 
-<h2>7. Push Notifications</h2>
+<h2 id="location">5. Location</h2>
 <ul>
-  <li>We send push notifications for events such as new matches, messages, and app activity via Firebase Cloud Messaging (FCM).</li>
-  <li>You may manage notification preferences within the App or through your device notification settings.</li>
-  <li>Disabling notifications will not affect core app functionality.</li>
+  <li>Dapster asks only for Android's <strong>approximate (coarse)</strong> location permission.</li>
+  <li>We <strong>round your coordinates to about 1 km</strong> before storing them.</li>
+  <li>Android's / Google's geocoding service turns your location into a city or area name.</li>
+  <li>Your profile shows your city/area. <strong>Your exact location is never shown.</strong></li>
+  <li>Location affects the order of profiles in the feed.</li>
+  <li><strong>Sharing location in a chat</strong> sends your approximate coordinates to the other person, as part of the message. Map tiles come from OpenStreetMap, so OpenStreetMap receives your IP address and the map area being viewed.</li>
 </ul>
 
-<h2>8. Children's Privacy</h2>
+<h2 id="visible">6. What other members can see</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Shown to other members</th><th>Never shown to other members</th></tr>
+  <tr><td>Persona name, public photos, bio, age shown, gender, city/area; height, weight, body type, relationship status and languages if you add them; the "online" mark (only if active in the last 10 minutes and availability is on); plan badge on men's profiles (shown to women)</td><td>Email, phone number, date of birth, selfie-check image and voice clip, exact location, private photos (unless you approve someone)</td></tr>
+</table>
+</div>
+
+<h2 id="chats">7. Chats, photos and view-once</h2>
 <ul>
-  <li>Dapster is strictly for users aged 18 and above.</li>
-  <li>We do not knowingly collect personal information from anyone under 18.</li>
-  <li>If we become aware that a user is under 18, we will immediately terminate their account and delete all associated data.</li>
-  <li>If you believe a minor has created an account, please contact us at <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a> so we can take immediate action.</li>
+  <li>Match and friend chats disappear 24 hours after each message is sent. The last 5 messages of a chat may stay up to 7 days, as text.</li>
+  <li>In instant-message and Dapster ID request chats, a participant may turn disappearing off; those messages stay until the chat or an account is deleted.</li>
+  <li>Chat photos and audio are stored on Cloudflare R2 with unlisted links and are deleted when the message expires.</li>
+  <li><strong>View-once and listen-once</strong> are enforced by the app. Android blocks screenshots inside Dapster, but someone can still capture the screen with another device.</li>
+  <li><strong>Private photos</strong> are stored privately and served only through our authenticated server, only to members you approve. You can revoke access at any time.</li>
+  <li><strong>Push notifications</strong> are sent through Google Firebase Cloud Messaging and may include a preview of the message text.</li>
+  <li>Blocking someone deletes the chat history between you.</li>
 </ul>
 
-<h2>9. Your Rights and Choices</h2>
-<p>You have the following rights regarding your personal data:</p>
+<h2 id="moderation">8. Moderation, scanning and reports</h2>
 <ul>
-  <li><strong>Access:</strong> You may request a copy of the personal data we hold about you.</li>
-  <li><strong>Correction:</strong> You may update your profile information directly in the App at any time.</li>
-  <li><strong>Deletion:</strong> You may delete your account and all associated data through the App settings, or by contacting us.</li>
-  <li><strong>Withdraw Consent:</strong> You may revoke permissions (location, notifications, camera, microphone) through your device settings at any time.</li>
-  <li><strong>Ad measurement:</strong> You can reset or delete your Android Advertising ID in your device settings (Settings &rarr; Google &rarr; Ads). Once deleted, it can no longer be used to measure ads.</li>
-  <li><strong>Portability:</strong> You may request an export of your data in a portable format.</li>
-</ul>
-<p>To exercise any of these rights, contact us at <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a>. We will respond within 30 days.</p>
-
-<h2>10. Third-Party Links and Services</h2>
-<ul>
-  <li>The App may contain links or integrations with third-party services (e.g., Google Sign-In).</li>
-  <li>We are not responsible for the privacy practices of third-party services.</li>
-  <li>Please review the privacy policies of any third-party service you use.</li>
+  <li>Every text message, caption and channel post is <strong>automatically scanned</strong> for safety risks, such as phone numbers, mentions of other platforms, requests for money, and violence or blackmail. Flagged text is stored for review.</li>
+  <li><strong>Authorised Dapster staff may access conversations</strong> for safety, moderation, legal compliance and to handle reports.</li>
+  <li>Photos are not scanned automatically; they are reviewed when reported or during our own reviews.</li>
+  <li>Our text filter blocks profile and channel text that describes a minor.</li>
+  <li>When you report someone, we store the report, the reason and the content concerned so staff can review it.</li>
 </ul>
 
-<h2>11. Audio and Media Messages</h2>
+<h2 id="payments">9. Payments</h2>
 <ul>
-  <li>Audio messages recorded and sent within the App are uploaded to Cloudflare R2 and transmitted to the recipient. They are deleted from R2 when the parent message is deleted.</li>
-  <li>Images sent in chats are stored on Cloudflare R2.</li>
-  <li>View-once images are accessible only once by the recipient and are then marked as viewed and no longer served by the App.</li>
-  <li>1:1 match chats and friend chats automatically disappear 24 hours after the message is sent. A background job sweeps expired messages from the database every minute and deletes the associated media object from Cloudflare R2 at the same time.</li>
-  <li>Channel (group) messages are NOT automatically deleted after 24h — they live until the channel owner or admin removes them, or until the channel itself is deleted.</li>
+  <li>All purchases go through Google Play Billing. We never receive your card, UPI or bank details.</li>
+  <li>We receive from Google Play the product bought, price, time and order/purchase details, and we use the Google Play Android Publisher API to confirm purchases and detect refunds.</li>
+  <li>If a purchase is refunded or cancelled by Google, we remove the matching benefit.</li>
 </ul>
 
-<h2>11A. Private Photos</h2>
+<h2 id="ads">10. Ad measurement (Meta) and device data</h2>
 <ul>
-  <li>You may upload up to six "private photos" that are kept separate from your main profile photos.</li>
-  <li>Private photos are stored in a private Cloudflare R2 bucket. The raw files are never served on a public URL — every byte fetch is authenticated and authorized on our backend before R2 is read.</li>
-  <li>Other users see only a blurred placeholder ("blurhash") until you explicitly grant access through the in-chat request / approve flow.</li>
-  <li>You may revoke an approved grant at any time from the chat screen; the partner loses access immediately and we send them a push notification informing them that access was revoked.</li>
-  <li>When you delete your account, every private photo file you uploaded is deleted from R2 and every grant record is removed within 30 days.</li>
+  <li>Dapster shows <strong>no ads</strong> inside the app. We do run ads for Dapster on Facebook and Instagram.</li>
+  <li>To measure those ads, the app includes the <strong>Meta (Facebook) App Events SDK</strong>. It sends Meta: app install and app-open events, completed registration, purchase value and currency, your Android Advertising ID, and ad install-referrer data (which ad led to the install). As with any app using this SDK, Meta also receives basic device information (such as device model, Android version and app version) and your IP address.
+  <li>We do <strong>not</strong> send Meta your name, messages, photos or location.</li>
+  <li>Meta handles this data under its own privacy policy (<a href="https://www.facebook.com/privacy/policy" rel="noopener">facebook.com/privacy/policy</a>). Because Meta may use it for its own ad measurement, Google Play lists this as "shared" data.</li>
+  <li><strong>Your choice:</strong> you can reset or delete your Advertising ID in Android settings (Settings &gt; Google &gt; Ads, or Settings &gt; Privacy &gt; Ads).</li>
+  <li>The app also uses a push-notification token (Firebase), your app version and basic device information needed to work properly.</li>
 </ul>
 
-<h2>12. Verification Data (Selfie)</h2>
+<h2 id="processors">11. Service providers and where data goes</h2>
+<p>We use these providers to run Dapster. They process data for us, for the purposes described here.</p>
+<div class="table-wrap">
+<table>
+  <tr><th>Provider</th><th>What it does</th><th>Location</th></tr>
+  <tr><td>Supabase</td><td>Main database (PostgreSQL)</td><td>AWS Mumbai, India</td></tr>
+  <tr><td>Railway</td><td>Application servers. All app requests are processed here.</td><td>United States (US East)</td></tr>
+  <tr><td>Cloudflare</td><td>Network proxy / CDN for app traffic, and R2 file storage for photos, chat media, selfies and backups</td><td>Global network</td></tr>
+  <tr><td>Google Firebase Cloud Messaging</td><td>Push notifications (may include a message preview)</td><td>Google global infrastructure</td></tr>
+  <tr><td>Google Sign-In</td><td>Signing in with Google</td><td>Google global infrastructure</td></tr>
+  <tr><td>Google Play Billing and Android Publisher API</td><td>Purchases and refunds</td><td>Google global infrastructure</td></tr>
+  <tr><td>Google ML Kit</td><td>Face detection for the selfie check, <strong>on your device only</strong></td><td>Your phone</td></tr>
+  <tr><td>Android / Google geocoding service</td><td>Turns location into a city/area name</td><td>Google global infrastructure</td></tr>
+  <tr><td>OpenStreetMap</td><td>Map tiles when picking or viewing a location</td><td>OpenStreetMap servers</td></tr>
+  <tr><td>Google Fonts</td><td>Downloads app fonts (receives your IP address)</td><td>Google global infrastructure</td></tr>
+  <tr><td>Meta (Facebook) App Events SDK</td><td>Measuring Dapster's own ads (see <a href="#ads">Section 10</a>)</td><td>Meta global infrastructure</td></tr>
+</table>
+</div>
 <ul>
-  <li><strong>A verification selfie is required to use Dapster.</strong> It is part of sign-up and cannot currently be skipped.</li>
-  <li>The image is stored privately. It is never published on your profile, never shown to other members, and never shared with third parties or used for advertising.</li>
-  <li><strong>Verification is currently automatic.</strong> Submitting a selfie marks the account verified without a person reviewing the image. We may review it later, for example if the account is reported. A verified badge therefore means only that a selfie was submitted — it is <strong>not</strong> an identity check and is not proof that a member is who they claim to be.</li>
-  <li><strong>Retention:</strong> we keep the verification image for as long as the account exists, and it may persist for a period after account deletion or in routine backups. We do not currently delete it immediately after sign-up. If you want your verification image removed, email us at <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a> and we will delete it on request.</li>
+  <li><strong>Cross-border transfer:</strong> your data is processed in India and in the United States, and passes through Cloudflare's global network. We do not transfer personal data to any country that the Government of India has restricted under section 16 of the DPDP Act.</li>
+  <li><strong>Other sharing:</strong> with other members as described in <a href="#visible">Section 6</a>; with authorities when the law requires (see our <a href="terms.html#lawful">Terms, Section 15</a>); and, if Dapster is transferred to a new owner, with that owner, who must keep this policy's protections or ask for your consent.</li>
 </ul>
 
-<h2>13. Changes to This Privacy Policy</h2>
+<h2 id="security">12. Security</h2>
+<p>We use these measures:</p>
 <ul>
-  <li>We may update this Privacy Policy periodically to reflect changes in our practices or for legal, operational, or regulatory reasons.</li>
-  <li>We will notify you of significant changes through the App or via the contact information associated with your account.</li>
-  <li>Continued use of the App after the effective date of changes constitutes your acceptance of the updated Policy.</li>
-  <li>The "Last Updated" date at the top of this document indicates when the most recent changes were made.</li>
+  <li>HTTPS/TLS encryption for data in transit.</li>
+  <li>Our storage providers' default encryption at rest.</li>
+  <li>Passwords stored only as bcrypt hashes; refresh tokens stored hashed.</li>
+  <li>Private photos and selfies in a private storage bucket, served only through our authenticated server.</li>
+  <li>Screenshot blocking inside the app on Android.</li>
+  <li>Admin access limited to allow-listed accounts, with an audit log of admin actions.</li>
+  <li>Row-level security on database tables.</li>
+  <li>Rate limiting.</li>
+</ul>
+<p><strong>No system is 100% secure.</strong> We cannot guarantee that data will never be accessed without permission.</p>
+
+<h2 id="retention">13. How long we keep data</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Data</th><th>Kept for</th></tr>
+  <tr><td>Account and profile</td><td>While your account is active, plus up to 30 days after deletion</td></tr>
+  <tr><td>Chats</td><td>24 hours (last 5 messages up to 7 days, as text); or until deletion for chats with disappearing turned off</td></tr>
+  <tr><td>Selfie-check image and voice clip</td><td>30 days after submission</td></tr>
+  <tr><td>Flagged-message records</td><td>While your account is active; deleted in the account purge</td></tr>
+  <tr><td>Reports</td><td>While relevant for safety; removed with the account</td></tr>
+  <tr><td>Purchase and refund records</td><td>As long as tax and accounting laws require</td></tr>
+  <tr><td>Hashed (SHA-256) copy of email, Google ID, username and phone, in a deletion record</td><td>Kept after deletion to honour your deletion and stop banned users from re-registering. It cannot be turned back into the original details.</td></tr>
+  <tr><td>Backups</td><td>Deleted on a rolling basis within 35 days</td></tr>
+  <tr><td>Server logs</td><td>According to each provider's log retention</td></tr>
+</table>
+</div>
+<p>Where Indian law requires us to keep specific data longer (for example, evidence of child sexual abuse material, or data an authority has lawfully ordered us to preserve), we keep only that data, only for as long as required. Full details: <a href="delete-account.html">Delete your account</a>.</p>
+
+<h2 id="rights">14. Your rights</h2>
+<p>Under the DPDP Act, 2023 and the DPDP Rules, 2025, you have the right to:</p>
+<ul>
+  <li><strong>Access:</strong> get a summary of your personal data we process and what we do with it, and who we shared it with.</li>
+  <li><strong>Correction, completion and updating:</strong> most profile details can be edited in the app. For other data, write to us.</li>
+  <li><strong>Erasure:</strong> delete your account in the app or ask us to erase data we no longer need.</li>
+  <li><strong>Withdraw consent</strong> (see <a href="#consent">Section 3</a>).</li>
+  <li><strong>Grievance redressal:</strong> complain to our Grievance Officer.</li>
+  <li><strong>Nominate</strong> someone to exercise your rights if you die or become unable to. Email the Grievance Officer with the nominee's name and contact details.</li>
+</ul>
+<p><strong>How:</strong> use the in-app settings, or email the Grievance Officer (<a href="#grievance">Section 17</a>). We may ask you to confirm the account is yours. We acknowledge requests within 24 hours and resolve them within 15 days (IT Rules, 2021), and in any case within the time set by the DPDP Rules.</p>
+<p>If you are not satisfied after using our grievance process, you can complain to the <strong>Data Protection Board of India</strong>.</p>
+
+<h2 id="breach">15. Data breaches</h2>
+<p>If a personal data breach happens, we will inform affected users and the Data Protection Board of India as the DPDP Rules require, including what happened, the likely impact, what we are doing about it, and what you can do to protect yourself.</p>
+
+<h2 id="minors">16. 18+ only</h2>
+<ul>
+  <li>Dapster is only for adults aged 18 and over. We do not knowingly collect data from anyone under 18.</li>
+  <li>Accounts we believe belong to a minor are banned and deleted. Where there is child sexual abuse material, we preserve evidence as the law requires and report it to the authorities. See our <a href="child-safety.html">Child Safety Standards</a>.</li>
+  <li>If you think a minor is using Dapster, email <a href="mailto:dapsterofficial@gmail.com?subject=Child%20Safety">dapsterofficial@gmail.com</a> with the subject "Child Safety".</li>
 </ul>
 
-<h2>14. Governing Law</h2>
-<p>This Privacy Policy is governed by the laws of India. Any disputes relating to this Policy shall be subject to the exclusive jurisdiction of the courts located in India.</p>
-
-<h2>15. Persona-Based Profiles and AI-Assisted Messaging</h2>
+<section class="contact" id="grievance">
+<h2>17. Grievance Officer and contact</h2>
 <ul>
-  <li><strong>Dapster is persona-based by design.</strong> Every profile is a chosen way of expressing oneself, not a verified statement of identity or circumstances. Members may present an age range, relationship status, background or life situation that differs from their real one. You accept this before joining, in the Community Standards shown at sign-up. Nothing on a profile has been verified by us.</li>
-  <li>Separately, not every profile belongs to an independent member seeking a relationship. Some profiles may be created, seeded, curated, or operated by or on behalf of Dapster, including for demonstration, illustration, testing, moderation or safety purposes. Some messages you receive may be generated or assisted by automated systems, including artificial intelligence (AI).</li>
-  <li>These profiles are <strong>not individually labelled in the App</strong>. You should not assume that any given profile represents a real, independent, available person.</li>
-  <li>Where you interact with such a profile or an AI-assisted feature, the content of those messages may be processed by Dapster and its service providers in order to operate, moderate, and improve the service.</li>
-  <li>You should never share sensitive personal or financial information in any chat, and never send money to anyone you meet on Dapster.</li>
+  <li><strong>Grievance Officer:</strong> <mark>[GRIEVANCE OFFICER NAME]</mark></li>
+  <li><strong>Email:</strong> <mark>[GRIEVANCE OFFICER EMAIL]</mark></li>
+  <li><strong>Postal address:</strong> <mark>[OPERATOR POSTAL ADDRESS, KERALA, INDIA]</mark></li>
+  <li><strong>Data fiduciary / operator:</strong> <mark>[OPERATOR LEGAL NAME]</mark> (<mark>[OPERATOR TYPE: individual / registered business]</mark>)</li>
+  <li><strong>General support:</strong> <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a></li>
 </ul>
-<p>This processing is carried out in accordance with the "Information We Collect" and "How We Use Your Information" sections above.</p>
+<p>We acknowledge complaints within 24 hours and resolve them within 15 days. You can then approach the Data Protection Board of India (privacy) or the Grievance Appellate Committee at <a href="https://gac.gov.in" rel="noopener">gac.gov.in</a> (content and account decisions). More detail: <a href="terms.html#grievance">Terms, Section 19</a>.</p>
+</section>
 
-<h2>16. Contact Us</h2>
-<p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+<h2 id="changes">18. Changes to this policy</h2>
 <ul>
-  <li><strong>Email:</strong> <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a></li>
-  <li><strong>App:</strong> Dapster (com.dapster.app)</li>
+  <li>When we change this policy we give it a new version number and date.</li>
+  <li>The app asks every member to accept the new version before continuing. Important changes are also announced in the in-app Dapster Info channel.</li>
 </ul>
-<p>We are committed to resolving any concerns promptly and transparently.</p>
 
-<p><small>© 2026 Dapster. All rights reserved.</small></p>
+<footer>
+  <p>Dapster: Play Any Persona · Privacy Policy · Version 7.0 · Effective 29 September 2026</p>
+  <p><a href="index.html">All legal pages</a> · <a href="terms.html">Terms of Service</a> · <a href="delete-account.html">Delete your account</a> · <a href="child-safety.html">Child Safety Standards</a></p>
+</footer>
 
 </body>
 </html>

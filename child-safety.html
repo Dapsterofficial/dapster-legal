@@ -1,94 +1,127 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Child Safety Standards â€” Dapster</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #fff;
-      color: #1a1a1a;
-      min-height: 100vh;
-    }
-    header {
-      background: #FFC629;
-      padding: 48px 24px 40px;
-      text-align: center;
-    }
-    header h1 { font-size: 32px; font-weight: 800; color: #1a1a1a; }
-    header p { margin-top: 8px; font-size: 15px; color: #555; }
-    .content {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 24px 64px;
-    }
-    h2 { font-size: 22px; font-weight: 700; margin: 36px 0 12px; color: #1a1a1a; }
-    p { font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 14px; }
-    ul { padding-left: 20px; margin-bottom: 14px; }
-    ul li { font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 6px; }
-    .contact-box {
-      background: #fff8e1;
-      border: 2px solid #FFC629;
-      border-radius: 12px;
-      padding: 24px;
-      margin-top: 40px;
-    }
-    .contact-box h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
-    .contact-box p { margin: 0; font-size: 15px; color: #444; }
-    .contact-box a { color: #b8860b; font-weight: 600; }
-    footer {
-      background: #1a1a1a;
-      color: #888;
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Child Safety Standards — Dapster: Play Any Persona</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#5f5f5f; --brand:#FFC629; --link:#8a6300; --line:#e4e4e4; --soft:#FFF8E1; --warn:#FFF1F0; --warnline:#D93025; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 780px; margin: 0 auto; padding: 20px 16px 48px; color: var(--ink); background: #fff;
+         line-height: 1.6; overflow-wrap: break-word; }
+  .brand { font-weight: 800; font-size: 17px; }
+  .brand span { display: block; font-weight: 400; font-size: 14px; color: var(--muted); }
+  nav.links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 28px; border-bottom: 3px solid var(--brand); padding-bottom: 10px; margin: 22px 0 6px; line-height: 1.25; }
+  h2 { font-size: 21px; margin-top: 36px; scroll-margin-top: 12px; line-height: 1.3; }
+  p, li { font-size: 15.5px; }
+  li { margin-bottom: 4px; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 0; }
+  a { color: var(--link); }
+  mark { background: #FFE58A; color: #000; padding: 0 3px; border-radius: 3px; font-weight: 600; }
+  .box { background: var(--soft); border-left: 4px solid var(--brand); padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .warn { background: var(--warn); border-left-color: var(--warnline); }
+  .table-wrap { overflow-x: auto; margin: 16px 0; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; min-width: 420px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; font-size: 14px; }
+  th { background: #fafafa; }
+  .contact { background: #fafafa; border: 1px solid var(--line); border-radius: 8px; padding: 4px 16px 12px; margin-top: 40px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 12px; }
+  @media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 19px; } }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Dapster</h1>
-    <p>Child Safety Standards</p>
-  </header>
 
-  <div class="content">
+<div class="brand">Dapster: Play Any Persona<span>Real people. Imagined personas.</span></div>
+<nav class="links" aria-label="Legal pages">
+  <a href="index.html">All legal pages</a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="delete-account.html">Delete your account</a>
+  <a href="child-safety.html">Child Safety Standards</a>
+</nav>
 
-    <p>Dapster is an open-minded companion app intended exclusively for adults aged 18 and older. We are committed to maintaining a safe environment and take child safety seriously. This page outlines our standards against child sexual abuse and exploitation (CSAE).</p>
+<h1>Child Safety Standards</h1>
+<p class="meta">Effective: 29 September 2026 · Version 7.0</p>
 
-    <h2>1. Age Restriction</h2>
-    <p>Dapster is strictly an 18+ platform. Users must confirm they are 18 or older before accessing the app. Any user found to be under 18 will have their account permanently removed.</p>
+<p>These are the published standards against child sexual abuse and exploitation (CSAE) for the app <strong>Dapster: Play Any Persona</strong> (Android package <code>com.dapster.app</code>), published on Google Play by <mark>[OPERATOR LEGAL NAME]</mark>.</p>
 
-    <h2>2. Zero Tolerance for CSAM</h2>
-    <p>Dapster has a zero-tolerance policy toward child sexual abuse material (CSAM) and child sexual exploitation. Any content that sexualises minors is strictly prohibited and will result in immediate account termination and reporting to the relevant authorities.</p>
+<div class="box">
+  <strong>What changed in 7.0</strong>
+  <ul>
+    <li>Added the rule that personas must always be adults (no child personas) and our text filter for profile and channel text describing a minor.</li>
+    <li>Listed every in-app place you can report, and the "Child safety concern" reason.</li>
+    <li>Explained how we report to Indian authorities under the POCSO Act, and named a child safety point of contact.</li>
+    <li>Corrected an earlier statement that a report button exists on "every profile and message"; the exact places are now listed below.</li>
+  </ul>
+</div>
 
-    <h2>3. Reporting Mechanisms</h2>
-    <p>Users can report any concerning content or behaviour directly within the app. All reports are reviewed promptly. Reports involving child safety are treated with the highest priority.</p>
-    <ul>
-      <li>In-app report button available on every profile and message</li>
-      <li>Reports are reviewed by our team as quickly as possible</li>
-      <li>Accounts found violating child safety policies are permanently banned</li>
-    </ul>
+<div class="box warn">
+  <strong>Zero tolerance.</strong> Dapster does not allow any child sexual abuse material (CSAM), any sexualisation of minors, grooming, sextortion, or any attempt to contact, exploit or harm a child. We remove it, ban the accounts involved, preserve evidence as the law requires, and report it to the authorities.
+</div>
 
-    <h2>4. Compliance with Authorities</h2>
-    <p>Dapster complies with all applicable child safety laws. We report any confirmed CSAM or child exploitation content to the appropriate regional and national authorities, including the National Center for Missing and Exploited Children (NCMEC) where required.</p>
+<h2>1. Adults only (18+)</h2>
+<ul>
+  <li>Dapster is only for adults aged 18 and over. Users give their date of birth at sign-up and our server rejects anyone under 18.</li>
+  <li>Every account must also pass an automatic selfie check. This check is basic (it detects one face) and does not confirm age, so we also rely on reports and our own review.</li>
+  <li>Accounts we believe belong to someone under 18 are banned and deleted.</li>
+</ul>
 
-    <h2>5. Content Moderation</h2>
-    <p>We monitor the platform for policy violations. Users who attempt to use Dapster to contact or exploit minors will be permanently banned and reported to law enforcement.</p>
+<h2>2. No child personas</h2>
+<ul>
+  <li>Dapster is a persona app, but <strong>every persona must be an adult</strong>. A persona can be any adult age, gender or personality, or even an animal, but never a child.</li>
+  <li>Profiles, posts and chats must never describe, role-play, depict or sexualise anyone under 18, including in fiction, drawings or AI-generated images.</li>
+  <li>Our text filter blocks profile and channel text that describes a minor. Every text message, caption and channel post is also automatically scanned for safety risks, and authorised staff may access conversations for safety and to handle reports. Moderation can miss things, so reports matter.</li>
+</ul>
 
-    <h2>6. User Responsibility</h2>
-    <p>All users are required to comply with our Terms and Conditions and child safety policies. By using Dapster, users confirm they are 18 or older and agree not to engage in any behaviour that exploits or harms minors.</p>
+<h2>3. How to report in the app</h2>
+<p>Choose the reason <strong>"Child safety concern"</strong> when you report, so our team can see straight away that it is about a child.</p>
+<div class="table-wrap">
+<table>
+  <tr><th>Where</th><th>How</th></tr>
+  <tr><td>A profile card</td><td>Tap <strong>⋯</strong> &gt; <strong>Report</strong></td></tr>
+  <tr><td>A chat</td><td>Tap <strong>⋮</strong> &gt; <strong>Report</strong></td></tr>
+  <tr><td>A channel post</td><td>Tap <strong>⋯</strong> on the post &gt; <strong>Report</strong></td></tr>
+  <tr><td>A whole channel</td><td>Tap <strong>⋮</strong> &gt; <strong>Report Channel</strong></td></tr>
+  <tr><td>A post message</td><td>Tap <strong>⋮</strong> &gt; <strong>Report</strong></td></tr>
+</table>
+</div>
+<p>You can also block the account. If a child is in immediate danger, call <strong>112</strong> (India emergency) or your local police first.</p>
 
-    <div class="contact-box">
-      <h3>Child Safety Contact</h3>
-      <p>To report child safety concerns or to contact our designated child safety point of contact, email us at:<br/>
-      <a href="mailto:dapsterofficial@gmail.com">dapsterofficial@gmail.com</a></p>
-      <p style="margin-top:8px;">We are committed to responding to all child safety reports promptly.</p>
-    </div>
+<h2>4. How to report by email</h2>
+<p>Email <a href="mailto:dapsterofficial@gmail.com?subject=Child%20Safety">dapsterofficial@gmail.com</a> with the subject <strong>"Child Safety"</strong>, or write to our Grievance Officer. Include the Dapster ID or persona name and what you saw. Please do not send us copies of abusive images; describe them and where they are instead.</p>
 
-  </div>
+<h2>5. What we do</h2>
+<ul>
+  <li><strong>Remove</strong> the content and restrict or <strong>ban</strong> the accounts involved.</li>
+  <li><strong>Preserve evidence</strong> as the law requires before the account is deleted.</li>
+  <li><strong>Report to the authorities.</strong> As required by sections 19 to 21 of the Protection of Children from Sexual Offences (POCSO) Act, 2012, we report child sexual abuse material and child sexual abuse to Indian authorities: the National Cybercrime Reporting Portal (<a href="https://cybercrime.gov.in" rel="noopener">cybercrime.gov.in</a>), the cybercrime helpline <strong>1930</strong>, or the local police.</li>
+  <li>Where applicable, we also report to the National Center for Missing &amp; Exploited Children (NCMEC).</li>
+  <li><strong>Cooperate</strong> with law enforcement investigations, including by providing information under lawful orders.</li>
+  <li>Delete the account afterwards as described on <a href="delete-account.html">Delete your account</a>, keeping hashed identifiers so the person cannot sign up again.</li>
+</ul>
 
-  <footer>&copy; 2026 Dapster. All rights reserved.</footer>
+<h2>6. Compliance with the law</h2>
+<p>We comply with applicable child safety laws, including the POCSO Act, 2012, the Information Technology Act, 2000 (including section 67B), the IT Rules, 2021, and the Bharatiya Nyaya Sanhita, 2023. We also follow Google Play's Child Safety Standards policy.</p>
+
+<section class="contact" id="contact">
+<h2>Child safety point of contact</h2>
+<p>Our designated child safety point of contact, who can speak to our CSAM prevention practices and compliance:</p>
+<ul>
+  <li><strong>Name:</strong> <mark>[GRIEVANCE OFFICER NAME]</mark></li>
+  <li><strong>Email:</strong> <a href="mailto:dapsterofficial@gmail.com?subject=Child%20Safety">dapsterofficial@gmail.com</a> (subject "Child Safety") and <mark>[GRIEVANCE OFFICER EMAIL]</mark></li>
+  <li><strong>Operator:</strong> <mark>[OPERATOR LEGAL NAME]</mark> (<mark>[OPERATOR TYPE: individual / registered business]</mark>), <mark>[OPERATOR POSTAL ADDRESS, KERALA, INDIA]</mark></li>
+</ul>
+<p>We acknowledge complaints within 24 hours and resolve them within 15 days. Details: <a href="terms.html#grievance">Terms</a> and <a href="privacy-policy.html#grievance">Privacy Policy</a>.</p>
+</section>
+
+<footer>
+  <p>Dapster: Play Any Persona · Child Safety Standards · Version 7.0 · Effective 29 September 2026</p>
+  <p><a href="index.html">All legal pages</a> · <a href="terms.html">Terms of Service</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="delete-account.html">Delete your account</a></p>
+</footer>
+
 </body>
 </html>
